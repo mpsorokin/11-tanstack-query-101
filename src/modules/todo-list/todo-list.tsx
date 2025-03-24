@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { todoListApi } from "./api.ts";
 import { useState } from "react";
 
@@ -11,6 +11,7 @@ export function TodoList() {
   } = useQuery({
     queryKey: ["tasks", "list", { page }],
     queryFn: (meta) => todoListApi.getTodoList({ page }, meta),
+    placeholderData: keepPreviousData,
   });
 
   if (isPending) {
