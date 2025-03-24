@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Tanstack Query 101",
+      "done": false
+    },
+    {
+      "id": 2,
+      "text": "Tanstack Query 201",
+      "done": false
+    },
+    {
+      "id": 3,
+      "text": "Tanstack Query 202",
+      "done": false
+    },
+    {
+      "id": 4,
+      "text": "Tanstack Query 203",
+      "done": false
+    },
+    {
+      "id": 5,
+      "text": "Tanstack Query 204",
+      "done": false
+    }
+  ]
+}
