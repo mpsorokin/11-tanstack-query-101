@@ -2,27 +2,752 @@
   "tasks": [
     {
       "id": 1,
-      "text": "Tanstack Query 101",
+      "text": "Learn JavaScript fundamentals",
       "done": false
     },
     {
       "id": 2,
-      "text": "Tanstack Query 201",
+      "text": "Explore React basics",
       "done": false
     },
     {
       "id": 3,
-      "text": "Tanstack Query 202",
+      "text": "Set up Node.js environment",
       "done": false
     },
     {
       "id": 4,
-      "text": "Tanstack Query 203",
+      "text": "Understand RESTful APIs",
       "done": false
     },
     {
       "id": 5,
-      "text": "Tanstack Query 204",
+      "text": "Practice CSS layout techniques",
+      "done": false
+    },
+    {
+      "id": 6,
+      "text": "Build a simple HTML form",
+      "done": false
+    },
+    {
+      "id": 7,
+      "text": "Study data structures and algorithms",
+      "done": false
+    },
+    {
+      "id": 8,
+      "text": "Learn about version control with Git",
+      "done": false
+    },
+    {
+      "id": 9,
+      "text": "Explore different JavaScript frameworks",
+      "done": false
+    },
+    {
+      "id": 10,
+      "text": "Understand asynchronous JavaScript",
+      "done": false
+    },
+    {
+      "id": 11,
+      "text": "Read documentation for a new library",
+      "done": false
+    },
+    {
+      "id": 12,
+      "text": "Write unit tests for a function",
+      "done": false
+    },
+    {
+      "id": 13,
+      "text": "Debug a piece of code",
+      "done": false
+    },
+    {
+      "id": 14,
+      "text": "Refactor existing code",
+      "done": false
+    },
+    {
+      "id": 15,
+      "text": "Attend a tech webinar",
+      "done": false
+    },
+    {
+      "id": 16,
+      "text": "Contribute to an open source project",
+      "done": false
+    },
+    {
+      "id": 17,
+      "text": "Learn about database design",
+      "done": false
+    },
+    {
+      "id": 18,
+      "text": "Practice SQL queries",
+      "done": false
+    },
+    {
+      "id": 19,
+      "text": "Explore NoSQL databases",
+      "done": false
+    },
+    {
+      "id": 20,
+      "text": "Set up a development environment",
+      "done": false
+    },
+    {
+      "id": 21,
+      "text": "Learn about cloud computing",
+      "done": false
+    },
+    {
+      "id": 22,
+      "text": "Explore AWS services",
+      "done": false
+    },
+    {
+      "id": 23,
+      "text": "Learn about containerization with Docker",
+      "done": false
+    },
+    {
+      "id": 24,
+      "text": "Understand Kubernetes concepts",
+      "done": false
+    },
+    {
+      "id": 25,
+      "text": "Study network protocols",
+      "done": false
+    },
+    {
+      "id": 26,
+      "text": "Learn about cybersecurity basics",
+      "done": false
+    },
+    {
+      "id": 27,
+      "text": "Explore frontend frameworks like Vue.js",
+      "done": false
+    },
+    {
+      "id": 28,
+      "text": "Learn about state management in React",
+      "done": false
+    },
+    {
+      "id": 29,
+      "text": "Practice responsive web design",
+      "done": false
+    },
+    {
+      "id": 30,
+      "text": "Study web accessibility guidelines",
+      "done": false
+    },
+    {
+      "id": 31,
+      "text": "Learn about SEO best practices",
+      "done": false
+    },
+    {
+      "id": 32,
+      "text": "Explore web performance optimization",
+      "done": false
+    },
+    {
+      "id": 33,
+      "text": "Set up a CI/CD pipeline",
+      "done": false
+    },
+    {
+      "id": 34,
+      "text": "Learn about testing methodologies",
+      "done": false
+    },
+    {
+      "id": 35,
+      "text": "Write integration tests",
+      "done": false
+    },
+    {
+      "id": 36,
+      "text": "Explore end-to-end testing",
+      "done": false
+    },
+    {
+      "id": 37,
+      "text": "Learn about code review process",
+      "done": false
+    },
+    {
+      "id": 38,
+      "text": "Participate in a code review",
+      "done": false
+    },
+    {
+      "id": 39,
+      "text": "Study design patterns",
+      "done": false
+    },
+    {
+      "id": 40,
+      "text": "Learn about object-oriented programming",
+      "done": false
+    },
+    {
+      "id": 41,
+      "text": "Explore functional programming concepts",
+      "done": false
+    },
+    {
+      "id": 42,
+      "text": "Learn about microservices architecture",
+      "done": false
+    },
+    {
+      "id": 43,
+      "text": "Study message queues",
+      "done": false
+    },
+    {
+      "id": 44,
+      "text": "Learn about caching strategies",
+      "done": false
+    },
+    {
+      "id": 45,
+      "text": "Explore load balancing techniques",
+      "done": false
+    },
+    {
+      "id": 46,
+      "text": "Learn about API gateways",
+      "done": false
+    },
+    {
+      "id": 47,
+      "text": "Study GraphQL",
+      "done": false
+    },
+    {
+      "id": 48,
+      "text": "Learn about gRPC",
+      "done": false
+    },
+    {
+      "id": 49,
+      "text": "Explore serverless computing",
+      "done": false
+    },
+    {
+      "id": 50,
+      "text": "Learn about event-driven architecture",
+      "done": false
+    },
+    {
+      "id": 51,
+      "text": "Study system design principles",
+      "done": false
+    },
+    {
+      "id": 52,
+      "text": "Learn about software architecture patterns",
+      "done": false
+    },
+    {
+      "id": 53,
+      "text": "Explore different programming languages",
+      "done": false
+    },
+    {
+      "id": 54,
+      "text": "Learn about Python for backend development",
+      "done": false
+    },
+    {
+      "id": 55,
+      "text": "Study Java for enterprise applications",
+      "done": false
+    },
+    {
+      "id": 56,
+      "text": "Learn about C# and .NET framework",
+      "done": false
+    },
+    {
+      "id": 57,
+      "text": "Explore Go programming language",
+      "done": false
+    },
+    {
+      "id": 58,
+      "text": "Learn about mobile app development",
+      "done": false
+    },
+    {
+      "id": 59,
+      "text": "Study React Native for cross-platform apps",
+      "done": false
+    },
+    {
+      "id": 60,
+      "text": "Learn about Flutter framework",
+      "done": false
+    },
+    {
+      "id": 61,
+      "text": "Explore Swift for iOS development",
+      "done": false
+    },
+    {
+      "id": 62,
+      "text": "Learn about Kotlin for Android development",
+      "done": false
+    },
+    {
+      "id": 63,
+      "text": "Study UI/UX design principles",
+      "done": false
+    },
+    {
+      "id": 64,
+      "text": "Learn about user research methods",
+      "done": false
+    },
+    {
+      "id": 65,
+      "text": "Explore prototyping tools",
+      "done": false
+    },
+    {
+      "id": 66,
+      "text": "Learn about wireframing techniques",
+      "done": false
+    },
+    {
+      "id": 67,
+      "text": "Study user interface patterns",
+      "done": false
+    },
+    {
+      "id": 68,
+      "text": "Learn about interaction design",
+      "done": false
+    },
+    {
+      "id": 69,
+      "text": "Explore accessibility in UI/UX design",
+      "done": false
+    },
+    {
+      "id": 70,
+      "text": "Learn about design thinking process",
+      "done": false
+    },
+    {
+      "id": 71,
+      "text": "Study agile methodologies",
+      "done": false
+    },
+    {
+      "id": 72,
+      "text": "Learn about Scrum framework",
+      "done": false
+    },
+    {
+      "id": 73,
+      "text": "Explore Kanban methodology",
+      "done": false
+    },
+    {
+      "id": 74,
+      "text": "Learn about DevOps practices",
+      "done": false
+    },
+    {
+      "id": 75,
+      "text": "Study continuous integration",
+      "done": false
+    },
+    {
+      "id": 76,
+      "text": "Learn about continuous delivery",
+      "done": false
+    },
+    {
+      "id": 77,
+      "text": "Explore infrastructure as code",
+      "done": false
+    },
+    {
+      "id": 78,
+      "text": "Learn about monitoring and logging",
+      "done": false
+    },
+    {
+      "id": 79,
+      "text": "Study performance tuning",
+      "done": false
+    },
+    {
+      "id": 80,
+      "text": "Learn about security best practices in development",
+      "done": false
+    },
+    {
+      "id": 81,
+      "text": "Explore threat modeling",
+      "done": false
+    },
+    {
+      "id": 82,
+      "text": "Learn about penetration testing",
+      "done": false
+    },
+    {
+      "id": 83,
+      "text": "Study cryptography basics",
+      "done": false
+    },
+    {
+      "id": 84,
+      "text": "Learn about authentication and authorization",
+      "done": false
+    },
+    {
+      "id": 85,
+      "text": "Explore OAuth 2.0",
+      "done": false
+    },
+    {
+      "id": 86,
+      "text": "Learn about JWT (JSON Web Tokens)",
+      "done": false
+    },
+    {
+      "id": 87,
+      "text": "Study data privacy regulations (GDPR, CCPA)",
+      "done":false
+    },
+    {
+      "id": 88,
+      "text": "Learn about data encryption techniques",
+      "done": false
+    },
+    {
+      "id": 89,
+      "text": "Explore data masking and anonymization",
+      "done": false
+    },
+    {
+      "id": 90,
+      "text": "Learn about incident response planning",
+      "done": false
+    },
+    {
+      "id": 91,
+      "text": "Study network security protocols",
+      "done": false
+    },
+    {
+      "id": 92,
+      "text": "Learn about firewalls and intrusion detection systems",
+      "done": false
+    },
+    {
+      "id": 93,
+      "text": "Explore VPNs and secure tunneling",
+      "done": false
+    },
+    {
+      "id": 94,
+      "text": "Learn about secure coding practices",
+      "done": false
+    },
+    {
+      "id": 95,
+      "text": "Study secure software development lifecycle",
+      "done": false
+    },
+    {
+      "id": 96,
+      "text": "Learn about security audits and assessments",
+      "done": false
+    },
+    {
+      "id": 97,
+      "text": "Explore security information and event management (SIEM)",
+      "done": false
+    },
+    {
+      "id": 98,
+      "text": "Learn about threat intelligence",
+      "done": false
+    },
+    {
+      "id": 99,
+      "text": "Study vulnerability management",
+      "done": false
+    },
+    {
+      "id": 100,
+      "text": "Learn about risk assessment and management",
+      "done": false
+    },
+    {
+      "id": 101,
+      "text": "Explore business continuity and disaster recovery",
+      "done": false
+    },
+    {
+      "id": 102,
+      "text": "Learn about compliance standards (PCI DSS, HIPAA)",
+      "done": false
+    },
+    {
+      "id": 103,
+      "text": "Study security awareness training",
+      "done": false
+    },
+    {
+      "id": 104,
+      "text": "Learn about social engineering attacks",
+      "done": false
+    },
+    {
+      "id": 105,
+      "text": "Explore phishing and ransomware attacks",
+      "done": false
+    },
+    {
+      "id": 106,
+      "text": "Learn about malware analysis",
+      "done": false
+    },
+    {
+      "id": 107,
+      "text": "Study digital forensics",
+      "done": false
+    },
+    {
+      "id": 108,
+      "text": "Learn about ethical hacking",
+      "done": false
+    },
+    {
+      "id": 109,
+      "text": "Explore bug bounty programs",
+      "done": false
+    },
+    {
+      "id": 110,
+      "text": "Learn about security certifications (CISSP, CEH)",
+      "done": false
+    },
+    {
+      "id": 111,
+      "text": "Study cloud security best practices",
+      "done": false
+    },
+    {
+      "id": 112,
+      "text": "Learn about container security",
+      "done": false
+    },
+    {
+      "id": 113,
+      "text": "Explore serverless security",
+      "done": false
+    },
+    {
+      "id": 114,
+      "text": "Learn about IoT security",
+      "done": false
+    },
+    {
+      "id": 115,
+      "text": "Study mobile security",
+      "done": false
+    },
+    {
+      "id": 116,
+      "text": "Learn about AI and machine learning security",
+      "done": false
+    },
+    {
+      "id": 117,
+      "text": "Explore blockchain security",
+      "done": false
+    },
+    {
+      "id": 118,
+      "text": "Learn about quantum cryptography",
+      "done": false
+    },
+    {
+      "id": 119,
+      "text": "Study hardware security",
+      "done": false
+    },
+    {
+      "id": 120,
+      "text": "Learn about physical security measures",
+      "done": false
+    },
+    {
+      "id": 121,
+      "text": "Explore security policies and procedures",
+      "done": false
+    },
+    {
+      "id": 122,
+      "text": "Learn about security governance",
+      "done": false
+    },
+    {
+      "id": 123,
+      "text": "Study security compliance frameworks",
+      "done": false
+    },
+    {
+      "id": 124,
+      "text": "Learn about security risk management frameworks",
+      "done": false
+    },
+    {
+      "id": 125,
+      "text": "Explore security metrics and reporting",
+      "done": false
+    },
+    {
+      "id": 126,
+      "text": "Learn about security automation",
+      "done": false
+    },
+    {
+      "id": 127,
+      "text": "Study security orchestration",
+      "done": false
+    },
+    {
+      "id": 128,
+      "text": "Learn about security response automation",
+      "done": false
+    },
+    {
+      "id": 129,
+      "text": "Explore security analytics",
+      "done": false
+    },
+    {
+      "id": 130,
+      "text": "Learn about security intelligence",
+      "done": false
+    },
+    {
+      "id": 131,
+      "text": "Study security operations center (SOC)",
+      "done": false
+    },
+    {
+      "id": 132,
+      "text": "Learn about incident management process",
+      "done": false
+    },
+    {
+      "id": 133,
+      "text": "Explore security incident response lifecycle",
+      "done": false
+    },
+    {
+      "id": 134,
+      "text": "Learn about security communication and collaboration",
+      "done": false
+    },
+    {
+      "id": 135,
+      "text": "Study security documentation and reporting",
+      "done": false
+    },
+    {
+      "id": 136,
+      "text": "Learn about security training and awareness programs",
+      "done": false
+    },
+    {
+      "id": 137,
+      "text": "Explore security culture and awareness",
+      "done": false
+    },
+    {
+      "id": 138,
+      "text": "Learn about security leadership and management",
+      "done": false
+    },
+    {
+      "id": 139,
+      "text": "Study security team building and development",
+      "done": false
+    },
+    {
+      "id": 140,
+      "text": "Learn about security career paths and development",
+      "done": false
+    },
+    {
+      "id": 141,
+      "text": "Explore security industry trends and challenges",
+      "done": false
+    },
+    {
+      "id": 142,
+      "text": "Learn about security research and innovation",
+      "done": false
+    },
+    {
+      "id": 143,
+      "text": "Study security standards and frameworks updates",
+      "done": false
+    },
+    {
+      "id": 144,
+      "text": "Learn about security community and networking",
+      "done": false
+    },
+    {
+      "id": 145,
+      "text": "Explore security conferences and events",
+      "done": false
+    },
+    {
+      "id": 146,
+      "text": "Learn about security blogs and podcasts",
+      "done": false
+    },
+    {
+      "id": 147,
+      "text": "Study security books and publications",
+      "done": false
+    },
+    {
+      "id": 148,
+      "text": "Learn about security tools and technologies",
+      "done": false
+    },
+    {
+      "id": 149,
+      "text": "Explore security labs and virtual environments",
+      "done": false
+    },
+    {
+      "id": 150,
+      "text": "Learn about security certifications renewal and maintenance",
       "done": false
     }
   ]
