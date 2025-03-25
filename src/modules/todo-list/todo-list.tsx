@@ -1,15 +1,6 @@
-import {
-  keepPreviousData,
-  useInfiniteQuery,
-  useQuery,
-} from "@tanstack/react-query";
-import { todoListApi } from "./api.ts";
-import { useCallback, useRef, useState } from "react";
 import { useTodoList } from "./use-todo-list.tsx";
 
 export function TodoList() {
-  //const [page, setPage] = useState(1);
-
   const { error, todoItems, isPending, cursor } = useTodoList();
 
   /*const {
