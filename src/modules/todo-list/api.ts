@@ -21,6 +21,7 @@ export type TodoDto = {
 };
 
 export const todoListApi = {
+  baseKey: "tasks",
   getTodoList: async (
     { page }: { page: number },
     { signal }: { signal: AbortSignal },
@@ -31,7 +32,7 @@ export const todoListApi = {
 
   getTodoListQueryOptions: () => {
     return queryOptions({
-      queryKey: ["tasks", "list"],
+      queryKey: [todoListApi.baseKey, "list"],
       queryFn: (meta) =>
         jsonApiInstance<TodoDto[]>(`/tasks`, {
           signal: meta.signal,
@@ -41,7 +42,7 @@ export const todoListApi = {
 
   getTodoListInfiniteQueryOptions: () => {
     return infiniteQueryOptions({
-      queryKey: ["tasks", "list"],
+      queryKey: [todoListApi.baseKey, "list"],
       queryFn: (meta) =>
         jsonApiInstance<PaginatedResult<TodoDto>>(
           `/tasks?_page=${meta.pageParam}`,
