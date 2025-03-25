@@ -29,11 +29,11 @@ export const todoListApi = {
     return await (res.json() as Promise<PaginatedResult<TodoDto>>);
   },
 
-  getTodoListQueryOptions: ({ page }: { page: number }) => {
+  getTodoListQueryOptions: () => {
     return queryOptions({
-      queryKey: ["tasks", "list", { page }],
+      queryKey: ["tasks", "list"],
       queryFn: (meta) =>
-        jsonApiInstance(`/tasks?_page=${page}`, {
+        jsonApiInstance<TodoDto[]>(`/tasks`, {
           signal: meta.signal,
         }),
     });

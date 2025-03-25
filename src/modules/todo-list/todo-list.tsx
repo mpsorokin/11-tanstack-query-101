@@ -1,11 +1,17 @@
 import { useTodoList } from "./use-todo-list.tsx";
 import React from "react";
-import { useMutation } from "@tanstack/react-query";
-import { todoListApi } from "./api.ts";
-import { nanoid } from "nanoid";
+import { useCreateTodo } from "./use-create-todo.tsx";
 
 export function TodoList() {
-  const { error, todoItems, isPending, cursor } = useTodoList();
+  const {
+    error,
+    todoItems,
+    isPending,
+    //refetch,
+    //cursor
+  } = useTodoList();
+
+  const { handleCreate } = useCreateTodo();
 
   /*const {
     data: todoItems,
@@ -16,24 +22,6 @@ export function TodoList() {
     queryFn: (meta) => todoListApi.getTodoList({ page }, meta),
     placeholderData: keepPreviousData,
   });*/
-
-  const createTodoMutation = useMutation({
-    mutationFn: todoListApi.createTodo,
-  });
-
-  const handleCreate = (e: React.FormEvent<HTMLFormElement>) => {
-    const formData = new FormData(e.currentTarget);
-
-    const title = String(formData.get("title") ?? "");
-
-    createTodoMutation.mutate({
-      id: nanoid(),
-      done: false,
-      text: title,
-      userId: 1,
-    });
-    e.currentTarget.reset();
-  };
 
   if (isPending) {
     return <div>loading...</div>;
@@ -63,7 +51,7 @@ export function TodoList() {
           </div>
         ))}
       </div>
-      {cursor}
+      {/*{cursor}*/}
     </div>
   );
 }

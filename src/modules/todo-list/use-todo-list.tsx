@@ -1,4 +1,4 @@
-import { useInfiniteQuery } from "@tanstack/react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import { todoListApi } from "./api.ts";
 import { useCallback, useRef } from "react";
 
@@ -7,20 +7,22 @@ export function useTodoList() {
     data: todoItems,
     error,
     isPending,
-    fetchNextPage,
+    //refetch,
+    //fetchNextPage,
     //hasNextPage,
     //isFetchingNextPage,
-  } = useInfiniteQuery({
-    ...todoListApi.getTodoListInfiniteQueryOptions(),
+  } = useQuery({
+    ...todoListApi.getTodoListQueryOptions(),
+    select: (data) => data.toReversed(),
   });
 
-  const cursorRef = useIntersection(() => {
+  /*const cursorRef = useIntersection(() => {
     fetchNextPage();
-  });
+  });*/
 
-  const cursor = (
+  /* const cursor = (
     <div className="mt-3 flex gap-3" ref={cursorRef}>
-      {/*<button
+      {/!*<button
           onClick={() => setPage((p) => Math.max(p - 1, 1))}
           className="p-3 rounded border border-teal-500 cursor-pointer"
         >
@@ -31,11 +33,17 @@ export function useTodoList() {
           className="p-3 rounded border border-teal-500 cursor-pointer"
         >
           next
-        </button>*/}
+        </button>*!/}
     </div>
-  );
+  );*/
 
-  return { error, todoItems, isPending, cursor };
+  return {
+    error,
+    todoItems,
+    isPending,
+    //refetch,
+    //cursor
+  };
 }
 
 export function useIntersection(onIntersect: () => void) {
