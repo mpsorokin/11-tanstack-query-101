@@ -3,6 +3,7 @@ import React from "react";
 import { useCreateTodo } from "./use-create-todo.tsx";
 import { useDeleteTodo } from "./use-delete-todo.tsx";
 import { TodoDto } from "./api.ts";
+import { useToggleTodo } from "./use-toggle-todo.tsx";
 
 export function TodoList() {
   const {
@@ -15,6 +16,7 @@ export function TodoList() {
 
   const { handleCreate } = useCreateTodo();
   const { handleDelete } = useDeleteTodo();
+  const { toggleTodo } = useToggleTodo();
 
   /*const {
     data: todoItems,
@@ -53,6 +55,11 @@ export function TodoList() {
             className="border border-slate-500 rounded-xl p-3 flex justify-between"
             key={todo.id}
           >
+            <input
+              type="checkbox"
+              checked={todo.done}
+              onChange={() => toggleTodo(todo.id, todo.done)}
+            />
             {todo.text}
             <button
               onClick={() => handleDelete(todo.id)}

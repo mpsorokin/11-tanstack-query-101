@@ -902,7 +902,7 @@
     },
     {
       "id": "ssuwmk-D9gFXWGZ_mRWDg",
-      "done": false,
+      "done": true,
       "text": "text",
       "userId": 1
     },
@@ -932,13 +932,13 @@
     },
     {
       "id": "FjIpZjdLeOIh44IU7E-gK",
-      "done": false,
+      "done": true,
       "text": "d",
       "userId": 1
     },
     {
       "id": "BUezG_Hrq4WDb_HXL2P6B",
-      "done": false,
+      "done": true,
       "text": "d",
       "userId": 1
     },
@@ -949,14 +949,8 @@
       "userId": 1
     },
     {
-      "id": "iwEkhbDwBADa6NaNNZ2A4",
-      "done": false,
-      "text": "r",
-      "userId": 1
-    },
-    {
       "id": "RnWDcM2-ka-LC70cabF14",
-      "done": false,
+      "done": true,
       "text": "r",
       "userId": 1
     }
