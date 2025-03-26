@@ -4,6 +4,7 @@ import { TodoDto, todoListApi } from "./api.ts";
 import { nanoid } from "nanoid";
 import { authSlice } from "../auth/auth.slice.ts";
 import { queryClient } from "../../shared/api/query-client.ts";
+import { authApi } from "../auth/api.ts";
 
 export const createTodoThunk =
   (text: string): AppThunk =>
@@ -14,10 +15,13 @@ export const createTodoThunk =
       throw new Error("User ID is missing");
     }
 
+    // get data from cache
+    const user = await queryClient.fetchQuery(authApi.getUserById(userId));
+
     const newTodo: TodoDto = {
       id: nanoid(),
       done: false,
-      text: text,
+      text: `${text}, owner: ${user.login}`,
       userId,
     };
 
