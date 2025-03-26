@@ -1,4 +1,4 @@
-import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { todoListApi } from "./api.ts";
 import { useCallback, useRef } from "react";
 
@@ -13,7 +13,7 @@ export function useTodoList() {
     //isFetchingNextPage,
   } = useQuery({
     ...todoListApi.getTodoListQueryOptions(),
-    select: (data) => data.toReversed(),
+    select: (data) => [...data].reverse(),
   });
 
   /*const cursorRef = useIntersection(() => {
