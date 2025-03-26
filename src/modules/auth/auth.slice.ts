@@ -13,7 +13,7 @@ export const authSlice = createSlice({
     error: null,
   } as AuthState,
   selectors: {
-    userid: (state) => state.userId,
+    userId: (state) => state.userId,
     loginError: (state) => state.loginError,
   },
   reducers: {

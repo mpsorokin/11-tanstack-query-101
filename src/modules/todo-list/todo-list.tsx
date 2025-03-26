@@ -50,7 +50,12 @@ export function TodoList() {
           type="text"
           name="title"
         />
-        <button className="rounded p-2 border border-teal-500">Create</button>
+        <button
+          //disabled={isCreateLoading}
+          className="rounded p-2 border border-teal-500"
+        >
+          Create
+        </button>
       </form>
 
       <div className="flex flex-col gap-3">
