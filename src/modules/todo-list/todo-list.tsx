@@ -3,6 +3,7 @@ import { useCreateTodo } from "./use-create-todo.tsx";
 import { useDeleteTodo } from "./use-delete-todo.tsx";
 import { TodoDto } from "./api.ts";
 import { useToggleTodo } from "./use-toggle-todo.tsx";
+import { useUser } from "../auth/use-user.ts";
 
 export function TodoList() {
   const {
@@ -16,6 +17,8 @@ export function TodoList() {
   const { handleCreate } = useCreateTodo();
   const { handleDelete } = useDeleteTodo();
   const { toggleTodo } = useToggleTodo();
+
+  const userQuery = useUser();
 
   /*const {
     data: todoItems,
@@ -37,7 +40,9 @@ export function TodoList() {
 
   return (
     <div className="p-5 mx-auto max-w-[1200px] mt-4">
-      <h1 className="text-3xl font-bold underline mb-1">todo list</h1>
+      <h1 className="text-3xl font-bold underline mb-1">
+        Todo list. Owner: {userQuery.data?.login}
+      </h1>
 
       <form className="flex gap-2 mb-5" onSubmit={handleCreate}>
         <input

@@ -20,7 +20,7 @@ export const authApi = {
     });
   },
 
-  loginUser: (login: string, password: string) => {
+  loginUser: ({ login, password }: { login: string; password: string }) => {
     return jsonApiInstance<UserDto[]>(
       `/users/?login=${login}&password=${password}`,
     ).then((res) => res[0] as UserDto | null);
