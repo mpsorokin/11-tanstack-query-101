@@ -1,6 +1,8 @@
 import { useTodoList } from "./use-todo-list.tsx";
 import React from "react";
 import { useCreateTodo } from "./use-create-todo.tsx";
+import { useDeleteTodo } from "./use-delete-todo.tsx";
+import { TodoDto } from "./api.ts";
 
 export function TodoList() {
   const {
@@ -12,6 +14,7 @@ export function TodoList() {
   } = useTodoList();
 
   const { handleCreate } = useCreateTodo();
+  const { handleDelete } = useDeleteTodo();
 
   /*const {
     data: todoItems,
@@ -45,9 +48,18 @@ export function TodoList() {
       </form>
 
       <div className="flex flex-col gap-3">
-        {todoItems?.map((todo) => (
-          <div className="border border-slate-500 rounded-xl p-3" key={todo.id}>
+        {todoItems?.map((todo: TodoDto) => (
+          <div
+            className="border border-slate-500 rounded-xl p-3 flex justify-between"
+            key={todo.id}
+          >
             {todo.text}
+            <button
+              onClick={() => handleDelete(todo.id)}
+              className="text-rose-500 font-bold cursor-pointer"
+            >
+              Delete
+            </button>
           </div>
         ))}
       </div>

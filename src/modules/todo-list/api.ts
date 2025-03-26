@@ -68,7 +68,7 @@ export const todoListApi = {
       json: data,
     });
   },
-  deleteTodo: (id: number) => {
+  deleteTodo: (id: string) => {
     return jsonApiInstance<void>(`/tasks/${id}`, {
       method: "DELETE",
     });
