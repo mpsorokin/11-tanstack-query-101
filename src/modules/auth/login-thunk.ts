@@ -19,6 +19,14 @@ export const loginThunk =
             userId: mutationResult.id,
           }),
         );
+
+        // set user to cache
+        queryClient.setQueryData(
+          authApi.getUserById(mutationResult.id).queryKey,
+          mutationResult,
+        );
+
+        // remove errors
         dispatch(authSlice.actions.setError(null));
       }
 
